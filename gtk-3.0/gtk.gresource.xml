@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/org/gnome/theme">
+    <file>global-graphics/Null.svg</file>
+    <file>global-graphics/bullet-symbolic.svg</file>
+    <file>global-graphics/list-remove-symbolic.svg</file>
+    <file>global-graphics/object-select-symbolic.svg</file>
+    <file>global-graphics/object-select-symbolic@2.svg</file>
+    <file>theme-colors/colors-light.css</file>
+    <file>main-light.css</file>
+    <file>gtk.css</file>
+  </gresource>
+</gresources> 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
