@@ -1,0 +1,4 @@
+/* dark variant: dark colors + same widget css */
+
+@import url("theme-colors/colors-dark.css");
+@import url("main-light.css");

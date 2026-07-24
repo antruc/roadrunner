@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=roadrunner
+Comment=GTK theme based on Desert and Greybird
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=roadrunner
+MetacityTheme=roadrunner
+IconTheme=Adwaita
+CursorTheme=Adwaita
+ButtonLayout=menu:minimize,maximize,close

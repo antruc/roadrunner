@@ -1947,10 +1947,10 @@ modelbutton.flat:hover {
     0.1px 0px alpha(@modelbutton_selected_text_color, 0.2),
     0px 0.1px alpha(@modelbutton_selected_text_color, 0.4),
     0px -0.1px alpha(@modelbutton_selected_text_color, 0.4),
-    0px -1px alpha(@modelbutton_selected_text_color_shadow_color, 0.12),
-    0px 1px alpha(@modelbutton_selected_text_color_shadow_color, 0.12),
-    1px 0px alpha(@modelbutton_selected_text_color_shadow_color, 0.12),
-    -1px 0px alpha(@modelbutton_selected_text_color_shadow_color, 0.12);
+    0px -1px alpha(@modelbutton_selected_text_shadow_color, 0.12),
+    0px 1px alpha(@modelbutton_selected_text_shadow_color, 0.12),
+    1px 0px alpha(@modelbutton_selected_text_shadow_color, 0.12),
+    -1px 0px alpha(@modelbutton_selected_text_shadow_color, 0.12);
   background-image: linear-gradient(
     to bottom right,
     @modelbutton_bg,
@@ -1964,10 +1964,10 @@ modelbutton.flat:active {
     0.1px 0px alpha(@modelbutton_selected_text_color, 0.2),
     0px 0.1px alpha(@modelbutton_selected_text_color, 0.4),
     0px -0.1px alpha(@modelbutton_selected_text_color, 0.4),
-    0px -1px alpha(@modelbutton_selected_text_color_shadow_color, 0.12),
-    0px 1px alpha(@modelbutton_selected_text_color_shadow_color, 0.12),
-    1px 0px alpha(@modelbutton_selected_text_color_shadow_color, 0.12),
-    -1px 0px alpha(@modelbutton_selected_text_color_shadow_color, 0.12);
+    0px -1px alpha(@modelbutton_selected_text_shadow_color, 0.12),
+    0px 1px alpha(@modelbutton_selected_text_shadow_color, 0.12),
+    1px 0px alpha(@modelbutton_selected_text_shadow_color, 0.12),
+    -1px 0px alpha(@modelbutton_selected_text_shadow_color, 0.12);
   background-image: linear-gradient(
     shade(@modelbutton_bg, 0.92),
     @modelbutton_bg
@@ -3139,10 +3139,10 @@ pathbar > button.slider-button {
     0.1px 0px alpha(@hb_pathbar_button_text_color, 0.2),
     0px 0.1px alpha(@hb_pathbar_button_text_color, 0.2),
     0px -0.1px alpha(@hb_pathbar_button_text_color, 0.2),
-    0px -1px alpha(@hb_pathbar_button_text_color_shadow_color, 0.12),
-    0px 1px alpha(@hb_pathbar_button_text_color_shadow_color, 0.12),
-    1px 0px alpha(@hb_pathbar_button_text_color_shadow_color, 0.12),
-    -1px 0px alpha(@hb_pathbar_button_text_color_shadow_color, 0.12);
+    0px -1px alpha(@hb_pathbar_button_text_shadow_color, 0.12),
+    0px 1px alpha(@hb_pathbar_button_text_shadow_color, 0.12),
+    1px 0px alpha(@hb_pathbar_button_text_shadow_color, 0.12),
+    -1px 0px alpha(@hb_pathbar_button_text_shadow_color, 0.12);
   -gtk-icon-shadow: none;
 
   background-image: linear-gradient(
@@ -3173,10 +3173,10 @@ pathbar > button.slider-button {
     0.1px 0px alpha(@hb_pathbar_button_selected_text_color, 0.2),
     0px 0.1px alpha(@hb_pathbar_button_selected_text_color, 0.2),
     0px -0.1px alpha(@hb_pathbar_button_selected_text_color, 0.2),
-    0px -1px alpha(@hb_pathbar_button_selected_text_color_shadow_color, 0.12),
-    0px 1px alpha(@hb_pathbar_button_selected_text_color_shadow_color, 0.12),
-    1px 0px alpha(@hb_pathbar_button_selected_text_color_shadow_color, 0.12),
-    -1px 0px alpha(@hb_pathbar_button_selected_text_color_shadow_color, 0.12);
+    0px -1px alpha(@hb_pathbar_button_selected_text_shadow_color, 0.12),
+    0px 1px alpha(@hb_pathbar_button_selected_text_shadow_color, 0.12),
+    1px 0px alpha(@hb_pathbar_button_selected_text_shadow_color, 0.12),
+    -1px 0px alpha(@hb_pathbar_button_selected_text_shadow_color, 0.12);
   background-image: linear-gradient(
     to top,
     alpha(shade(@hd_pathbar_selected_bg, 1), 1),
@@ -3207,10 +3207,10 @@ pathbar > button.slider-button {
     0.1px 0px alpha(@hb_pathbar_button_selected_text_color, 0.2),
     0px 0.1px alpha(@hb_pathbar_button_selected_text_color, 0.2),
     0px -0.1px alpha(@hb_pathbar_button_selected_text_color, 0.2),
-    0px -1px alpha(@hb_pathbar_button_selected_text_color_shadow_color, 0.12),
-    0px 1px alpha(@hb_pathbar_button_selected_text_color_shadow_color, 0.12),
-    1px 0px alpha(@hb_pathbar_button_selected_text_color_shadow_color, 0.12),
-    -1px 0px alpha(@hb_pathbar_button_selected_text_color_shadow_color, 0.12);
+    0px -1px alpha(@hb_pathbar_button_selected_text_shadow_color, 0.12),
+    0px 1px alpha(@hb_pathbar_button_selected_text_shadow_color, 0.12),
+    1px 0px alpha(@hb_pathbar_button_selected_text_shadow_color, 0.12),
+    -1px 0px alpha(@hb_pathbar_button_selected_text_shadow_color, 0.12);
   background-color: transparent;
   background-image: linear-gradient(
     to bottom,
@@ -5267,12 +5267,13 @@ check {
   border-radius: 3px;
   -gtk-icon-size: 14px;
 } 
+/* ponytail: assets/ dir never existed, reuse global-graphics svgs */
 check:checked {
-    -gtk-icon-source: -gtk-scaled(-gtk-recolor(url("assets/check-symbolic.symbolic.png")), -gtk-recolor(url("assets/check@2-symbolic.symbolic.png")));
+    -gtk-icon-source: -gtk-scaled(-gtk-recolor(url("global-graphics/object-select-symbolic.svg")), -gtk-recolor(url("global-graphics/object-select-symbolic@2.svg")));
 }
-  
+
 check:indeterminate {
-    -gtk-icon-source: -gtk-scaled(-gtk-recolor(url("assets/dash-symbolic.symbolic.png")), -gtk-recolor(url("assets/dash@2-symbolic.symbolic.png")));
+    -gtk-icon-source: -gtk-recolor(url("global-graphics/list-remove-symbolic.svg"));
 }
 
 treeview.view radio:selected:focus,
@@ -5283,11 +5284,11 @@ radio {
 }
 treeview.view radio:checked:selected,
 radio:checked {
-    -gtk-icon-source: -gtk-scaled(-gtk-recolor(url("assets/bullet-symbolic.symbolic.png")), -gtk-recolor(url("assets/bullet@2-symbolic.symbolic.png")));
+    -gtk-icon-source: -gtk-recolor(url("global-graphics/bullet-symbolic.svg"));
 }
 treeview.view radio:indeterminate:selected,
 radio:indeterminate{
-    -gtk-icon-source: -gtk-scaled(-gtk-recolor(url("assets/dash-symbolic.symbolic.png")), -gtk-recolor(url("assets/dash@2-symbolic.symbolic.png")));
+    -gtk-icon-source: -gtk-recolor(url("global-graphics/list-remove-symbolic.svg"));
 }
 treeview.view check:selected:focus,
 treeview.view check:selected,
@@ -7295,57 +7296,6 @@ window.csd.solid-csd:backdrop {
     -gtk-icon-source: -gtk-icontheme("selection-end-symbolic");
   }
 
-  /*cursor-handle {
-  background-color: transparent;
-  background-image: none;
-  box-shadow: none;
-  border-style: none;
-  min-width: 20px;
-  min-height: 24px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-cursor-handle.top:dir(ltr), cursor-handle.bottom:dir(rtl) {
-  -gtk-icon-source: -gtk-scaled(url("assets/text-select-start.png"), 
-                                url("assets/text-select-start@2.png"));
-}
-cursor-handle.bottom:dir(ltr), cursor-handle.top:dir(rtl) {
-  -gtk-icon-source: -gtk-scaled(url("assets/text-select-end.png"),
-                                url("assets/text-select-end@2.png"));
-}
-cursor-handle.insertion-cursor:dir(ltr), cursor-handle.insertion-cursor:dir(rtl) {
-  -gtk-icon-source: -gtk-scaled(url("assets/slider-horz-scale-has-marks-above.png"),
-                                url("assets/slider-horz-scale-has-marks-above@2.png"));
-}
-cursor-handle.top:hover:dir(ltr),cursor-handle.bottom:hover:dir(rtl) {
-  -gtk-icon-source: -gtk-scaled(url("assets/text-select-start-hover.png"),
-                                url("assets/text-select-start-hover@2.png"));
-}
-cursor-handle.bottom:hover:dir(ltr), cursor-handle.top:hover:dir(rtl) {
-  -gtk-icon-source: -gtk-scaled(url("assets/text-select-end-hover.png"),
-                                url("assets/text-select-end-hover@2.png"));
-}
-cursor-handle.insertion-cursor:hover:dir(ltr),
-cursor-handle.insertion-cursor:hover:dir(rtl) {
-  -gtk-icon-source: -gtk-scaled(url("assets/slider-horz-scale-has-marks-above-hover.png"),
-                                url("assets/slider-horz-scale-has-marks-above-hover@2.png"));
-}
-cursor-handle.top:active:dir(ltr),
-cursor-handle.bottom:active:dir(rtl) {
-  -gtk-icon-source: -gtk-scaled(url("assets/text-select-start-active.png"),
-                                url("assets/text-select-start-active@2.png"));
-}
-cursor-handle.bottom:active:dir(ltr),
-cursor-handle.top:active:dir(rtl) {
-  -gtk-icon-source: -gtk-scaled(url("assets/text-select-end-active.png"),
-                                url("assets/text-select-end-active@2.png"));
-}
-cursor-handle.insertion-cursor:active:dir(ltr), cursor-handle.insertion-cursor:active:dir(rtl) {
-  -gtk-icon-source: -gtk-scaled(url("assets/slider-horz-scale-has-marks-above-active.png"),
-                                url("assets/slider-horz-scale-has-marks-above-active@2.png"));
-}*/
   shortcuts-section {
     margin: 20px;
   }
@@ -7539,14 +7489,4 @@ animation: awesome infinite linear 6s;}*/
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-/* DO NOT CHANGE ANYTHNG DOWN THE LINE HERE*/
-
-@define-color color_100 shade(@color_accent,1.9);
-@define-color color_200 shade(@color_accent,1.4);
-@define-color color_400 shade(@color_accent,1.2);
-@define-color color_500 shade(@color_accent,1.1);
-@define-color color_600 @color_accent;
-@define-color color_700 shade(@color_accent,0.9);
-@define-color color_800 shade(@color_accent,0.8);
-@define-color color_900 shade(@color_accent,0.7);
-@define-color color_1000 shade(@color_accent,0.3);
+/* accent palette lives in theme-colors/colors-light.css */
